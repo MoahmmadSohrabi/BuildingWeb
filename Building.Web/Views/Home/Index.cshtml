@@ -1,0 +1,460 @@
+﻿@model IEnumerable<Building.DataLayer.Entities.Course.Bulletin>
+
+@{
+    ViewData["Title"] = "خانه";
+}
+
+<div class="main-banner" id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="owl-carousel owl-banner">
+                            <div class="item header-text">
+                                <h6>به سایت ساختمانی ما خوش آمدید</h6>
+                                <h2>سایت <em>ساختمانی</em> بندرعباس <span>همراه با امکانات</span>!!!</h2>
+                                <p>این سایت برای راحتی انجام امورات ساختمانی ساکنین آماده شده است</p>
+                                <div class="down-buttons">
+                                    <div class="main-blue-button-hover">
+                                        <a href="#contact">پیام به ما</a>
+                                    </div>
+                                    <div class="call-button">
+                                        <a href="#"><i class="fa fa-phone"></i> 076-33753886</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item header-text">
+                                <h6>پرداخت شارژ</h6>
+                                <h2>شارژ ساختمانی <em>را به راحتی</em> با استفده از ساماه زرین پال <span>به صورت انلاین پرداخت کنید</span></h2>
+                                <p>با شارژ کردن کیف پول انلاین خود می توانید به راحتی شارژ و اجاره ساختمانی و ... را پرداخت کنید</p>
+                                <div class="down-buttons">
+                                    <div class="main-blue-button-hover">
+                                        <a href="#services">خدمات ما</a>
+                                    </div>
+                                    <div class="call-button">
+                                        <a href="#"><i class="fa fa-phone"></i> 09928401625</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item header-text">
+                                <h6>ویدیو های آموزشی</h6>
+                                <h2>ویدیو های آموزشی <em>،آموزش های کاربردی</em> برای شما <span>و اعضای خانواده</span></h2>
+                                <p>لطفا <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">حمایت ما</a> آموزش های ما را دنبال کنید و نظرتون را برای ما اشتراک بگذارید.با سپساس فراوان</p>
+                                <div class="down-buttons">
+                                    <div class="main-blue-button-hover">
+                                        <a href="#video">تماشای ویدیو</a>
+                                    </div>
+                                    <div class="call-button">
+                                        <a href="#"><i class="fa fa-phone"></i>09928401625</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services" class="our-services section">
+    <div class="services-right-dec">
+        <img src="/assets/images/services-right-dec.png" alt="">
+    </div>
+    <div class="container">
+        <div class="services-left-dec">
+            <img src="/assets/images/services-left-dec.png" alt="">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>ما <em>بهترین</em> سایت ساختمانی را برای راحتی  شما <span>آماده ساخته ایم</span></h2>
+                    <span>همراه با امکانات</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-services listShowBulletin" id="listShowBulletin">
+                    @foreach (var item in Model)
+                    {
+                        <partial name="_BoxPicture" model="@item" />
+                    }
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about" class="about-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="left-image">
+                    <img src="/assets/images/about-left-image.png" alt="Two Girls working together">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>اطلاعات کلی <em>در مورد ساختمان بندرعباس</em> &amp; <span>با در نظر گرفتن</span> تمام موارد امکانات و غیره</h2>
+                    <p>ساختمان 20 طبقه بندرعباس واقع در خیابان دانشگاه بندرعباس  چهارراه اتوبوسرانی </p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="fact-item">
+                                <div class="count-area-content">
+                                    <div class="icon">
+                                        <img src="/assets/images/service-icon-01.png" alt="">
+                                    </div>
+                                    <div class="count-digit">40</div>
+                                    <div class="count-title">تعداد واحد</div>
+                                    <p>هر واحد به متراژ130 متر</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="fact-item">
+                                <div class="count-area-content">
+                                    <div class="icon">
+                                        <img src="/assets/images/service-icon-02.png" alt="">
+                                    </div>
+                                    <div class="count-digit">100</div>
+                                    <div class="count-title">تعداد ساکنین</div>
+                                    <p>شامل حدود 100 ساکن </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="fact-item">
+                                <div class="count-area-content">
+                                    <div class="icon">
+                                        <img src="/assets/images/service-icon-03.png" alt="">
+                                    </div>
+                                    <div class="count-digit">1396</div>
+                                    <div class="count-title">سال ساخت</div>
+                                    <p>این ساختمان در سال 1396 زیر نظر مجرب ترین ساختمان سازان ساخته شده</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio" class="our-portfolio section">
+    <div class="portfolio-left-dec">
+        <img src="/assets/images/portfolio-left-dec.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2>گالری <em>تصاویر</em> &amp; مکان های محبوب  <span>اطراف مجتمع</span></h2>
+                    <span>شامل:رستوران،کافی شاپ،سوپرمارکت و غیره</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-portfolio">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="/assets/images/portfolio-01.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a rel="sponsored" href="https://templatemo.com/tm-564-plot-listing" target="_parent"><h4>پارک دانشگاه</h4></a>
+                                    <span>واقع در کوچه دانشگاه 11</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="/assets/images/portfolio-02.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>پارک کودکان</h4></a>
+                                    <span>واقع در حیاط مجتمع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="/assets/images/portfolio-03.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a rel="sponsored" href="https://templatemo.com/tm-562-space-dynamic" target="_parent"><h4>سوپرمارکت سعید</h4></a>
+                                    <span>ابتدای کوچه دانشگاه 10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="/assets/images/portfolio-04.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>آرایشگاه هیراد</h4></a>
+                                    <span>انتهای کوچه دانشگاه 10 جنب فست فودی</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="/assets/images/portfolio-01.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>پارک دانشگاه</h4></a>
+                                    <span>واقع در کوچه دانشگاه 11</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="/assets/images/portfolio-02.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>پارک کودکان</h4></a>
+                                    <span>واقع در حیاط مجتمع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="/assets/images/portfolio-03.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>سوپرمارکت سعید</h4></a>
+                                    <span>ابتدای کوچه دانشگاه 10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="/assets/images/portfolio-04.jpg" alt="">
+                            <div class="hover-effect">
+                                <div class="inner-content">
+                                    <a href="#"><h4>آرایشگاه هیراد</h4></a>
+                                    <span>انتهای کوچه دانشگاه 10 جنب فست فودی</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="pricing" class="pricing-tables">
+    <div class="tables-left-dec">
+        <img src="/assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+        <img src="/assets/images/tables-right-dec.png" alt="">
+    </div>
+</div>
+
+
+
+@*<div id="video" class="our-videos section">
+    <div class="videos-left-dec">
+        <img src="/assets/images/videos-left-dec.png" alt="">
+    </div>
+    <div class="videos-right-dec">
+        <img src="/assets/images/videos-right-dec.png" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="naccs">
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <ul class="nacc">
+                                    <li class="active">
+                                        <div>
+                                            <div class="thumb">
+                                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/JynGuQx4a1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="overlay-effect">
+                                                    <a href="#"><h4>Project One</h4></a>
+                                                    <span>SEO &amp; Marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/RdJBSFpcO4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="overlay-effect">
+                                                    <a href="#"><h4>Second Project</h4></a>
+                                                    <span>Advertising &amp; Marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/ZlfAjbQiL78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="overlay-effect">
+                                                    <a href="#"><h4>Project Three</h4></a>
+                                                    <span>Digital &amp; Marketing</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="thumb">
+                                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/mx1WseE7-0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <div class="overlay-effect">
+                                                    <a href="#"><h4>Fourth Project</h4></a>
+                                                    <span>SEO &amp; Advertising</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="menu">
+                                    <div class="active">
+                                        <div class="thumb">
+                                            <img src="/assets/images/video-thumb-01.png" alt="">
+                                            <div class="inner-content">
+                                                <h4>Project One</h4>
+                                                <span>SEO &amp; Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="thumb">
+                                            <img src="/assets/images/video-thumb-02.png" alt="">
+                                            <div class="inner-content">
+                                                <h4>Second Project</h4>
+                                                <span>Advertising &amp; Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="thumb">
+                                            <img src="/assets/images/video-thumb-03.png" alt="Marketing">
+                                            <div class="inner-content">
+                                                <h4>Project Three</h4>
+                                                <span>Digital &amp; Marketing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="thumb">
+                                            <img src="/assets/images/video-thumb-04.png" alt="SEO Work">
+                                            <div class="inner-content">
+                                                <h4>Fourth Project</h4>
+                                                <span>SEO &amp; Advertising</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+<div id="contact" class="contact-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="section-heading">
+                    <h2>ثبت نظرات شما <em>برای سایت</em> مجتمع ساختمانی <span>برای بهبود کارایی سایت</span></h2>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d463.20380195269956!2d56.34370389801358!3d27.202730729177244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1641112149291!5m2!1sen!2s" width="100%" height="360" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        @*<iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>*@
+                    </div>
+                    <div class="info">
+                        <span><i class="fa fa-phone"></i> <a href="#">09928401628<br>076-33336952</a></span>
+                        <span><i class="fa fa-envelope"></i> <a href="#">محمدحسین سهرابی<br>M.sohrabi1378.ms@gmail.com</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 align-self-center">
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <form asp-controller="Home" asp-action="CreateComment"
+                          data-ajax="true"
+                          data-ajax-method="post"
+                          data-ajax-mode="replace"
+                          data-ajax-update="#listComment"
+                          data-ajax-success="Success">
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="comment_CommentText" name="comment.CommentText" placeholder="متن نظر"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12">
+                                <button type="submit" class="btn btn-success"> ثبت دیدگاه </button>
+                            </div>
+                        </div>
+                    </form>
+                }
+                else
+                {
+                    <div class="alert alert-danger">
+                        جهت درج نظر باید وارد سایت شوید
+                    </div>
+                }
+
+                <!-- row -->
+                <div class="comment-row listComment" dir="rtl" id="listComment">
+
+                </div>
+                <!-- /row -->
+            </div>
+        </div>
+    </div>
+    <div class="contact-dec">
+        <img src="/assets/images/contact-dec.png" alt="">
+    </div>
+    <div class="contact-left-dec">
+        <img src="/assets/images/contact-left-dec.png" alt="">
+    </div>
+</div>
+
+
+<script src="~/assets/js/jquery.unobtrusive-ajax.min.js"></script>
+<script>
+    function Success() {
+        $("#comment_CommentText").val("");
+    }
+
+    $(function () {
+        $("#listComment").load("/Home/ShowComment/");
+    });
+    $(function () {
+        $("#listShowBulletin").load("/Home/ShowBulletin/");
+    });
+
+
+</script>
+
+

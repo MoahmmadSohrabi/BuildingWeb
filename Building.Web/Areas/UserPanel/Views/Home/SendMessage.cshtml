@@ -1,0 +1,60 @@
+﻿@model Building.DataLayer.Entities.User.User
+@{
+    ViewData["Title"] = "SendMessage";
+}
+<link rel="stylesheet" href="/assets/css/PanelStyle/style.css">
+<br />
+<br />
+<br />
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<!------ Include the above in your HEAD tag ---------->
+
+<section dir="rtl" class="get-in-touch">
+    <h1 class="title">سامانه ارسال پیامک</h1>
+    <form asp-action="SendMessage" method="post" class="contact-form row">
+        <div class="form-field col-lg-6">
+
+            <select  id="name" name="name" asp-for="@Model.UserName" class="input-text js-input" asp-items="@(ViewData["UserName"] as SelectList)"></select>
+            <label class="label" for="name">نام</label>
+        </div>
+        @*<div class="form-field col-lg-6 ">
+                <input id="email" class="input-text js-input" type="email" required>
+                <label class="label" for="email">E-mail</label>
+            </div>*@
+        <div class="form-field col-lg-6 ">
+            <select id="subname" name="subname" class="input-text js-input" asp-for="@Model.PhoneNumber" asp-items="@(ViewData["subUserName"] as SelectList)"></select>
+            <label class="label" for="phone">شماره تملس</label>
+        </div>
+        <div class="form-field col-lg-12">
+            <input id="message" class="input-text js-input" type="text" required>
+            <label class="label" for="message">متن پیام</label>
+        </div>
+        <div class="form-field col-lg-12">
+            <input class="submit-btn" type="submit" value="ارسال">
+        </div>
+    </form>
+
+
+</section>
+
+    <script>
+        $("#name").change(function () {
+            $("#subname").empty();
+            $.getJSON("/UserPanel/GetSubGroups" + $("#name :selected").val(),
+                function (data) {
+
+                    $.each(data,
+                        function () {
+                            $("#subname").append('<option value=' + this.value + '>' + this.text + '</option>');
+
+                        });
+
+                });
+
+
+        });
+    </script>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

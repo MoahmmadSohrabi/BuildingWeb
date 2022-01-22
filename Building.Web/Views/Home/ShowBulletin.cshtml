@@ -1,0 +1,17 @@
+﻿@using Building.Core.Convertors
+@using Building.DataLayer.Entities.Course
+@model List<Building.DataLayer.Entities.Course.Bulletin>
+@{
+    Layout = null;
+}
+@foreach (var item in Model) {
+
+<div class="item">
+    <h4>@item.BulletinHeader</h4>
+    <div class="icon"><img src="/assets/images/service-icon-01.png" alt=""></div>
+    <p>@item.BulletinText</p>
+</div>
+
+}
+
+

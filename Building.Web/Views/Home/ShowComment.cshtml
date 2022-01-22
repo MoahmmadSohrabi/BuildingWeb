@@ -1,0 +1,21 @@
+﻿@using Building.Core.Convertors
+@using Building.DataLayer.Entities.Course
+@model List<Building.DataLayer.Entities.Course.Comment>
+@{
+    Layout = null;
+}
+@foreach (var item in Model)
+{
+    <!-- row -->
+    <div class="comment-row">
+        <div class="left-col">
+            <h3> @item.User.UserName </h3>
+            <span>@item.CreateDate.ToShamsi()</span>
+            <p>
+                @item.CommentText
+            </p>
+        </div>
+    </div>
+    <!-- /row -->
+}
+

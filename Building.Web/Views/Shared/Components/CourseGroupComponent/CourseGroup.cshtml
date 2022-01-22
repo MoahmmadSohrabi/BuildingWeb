@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Building.DataLayer.Entities.Course.CourseGroup>
+<ul class="nav">
+    @*@foreach (var group in Model.Where(g => g.ParentId == null))
+        {
+
+            <li class="scroll-to-section"><a href="#top" class="active">@group.GroupTitle</a></li>
+
+        }*@
+
+    <li class="scroll-to-section"><a href="https://localhost:44330/" class="active">خانه</a></li>
+    <li class="scroll-to-section"><a href="#services">آگهی ها</a></li>
+    <li class="scroll-to-section"><a href="https://www.accuweather.com/fa/ir/bandar-abbas/208929/weather-forecast/208929">وضعیت آب و هوا</a></li>
+    <li class="scroll-to-section"><a href="#about">راهنمای مجتمع</a></li>
+    <li class="scroll-to-section"><a href="#contact">نقشه محل مجتمع</a></li>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <li class="scroll-to-section"><a href="/UserPanel">@User.Identity.Name خوش آمدی!</a></li>
+        <li class="scroll-to-section"><a href="/Logout">خروج</a></li>
+    }
+    else
+    {
+        <li class="scroll-to-section"><a href="/Login">ورود</a></li>
+        <li class="scroll-to-section"><a href="/Register">عضویت</a></li>
+    }
+    <li class="scroll-to-section"><div class="main-red-button-hover"><a href="#contact">ارتباط با ما</a></div></li>
+</ul>
+<a class='menu-trigger'>
+    <span>Menu</span>
+</a>

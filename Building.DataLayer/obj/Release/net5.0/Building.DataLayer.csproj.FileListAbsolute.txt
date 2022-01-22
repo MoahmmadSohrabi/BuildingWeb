@@ -1,0 +1,15 @@
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\Building.DataLayer.csproj.AssemblyReference.cache
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\Building.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\Building.DataLayer.AssemblyInfoInputs.cache
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\Building.DataLayer.AssemblyInfo.cs
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\bin\Release\net5.0\Building.DataLayer.deps.json
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\bin\Release\net5.0\Building.DataLayer.runtimeconfig.json
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\bin\Release\net5.0\Building.DataLayer.runtimeconfig.dev.json
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\bin\Release\net5.0\Building.DataLayer.dll
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\bin\Release\net5.0\ref\Building.DataLayer.dll
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\bin\Release\net5.0\Building.DataLayer.pdb
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\Building.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\Building.DataLayer.dll
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\ref\Building.DataLayer.dll
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\Building.DataLayer.pdb
+C:\Users\Mohammad\Documents\Visual Stdio 2010\Projects\Asp.NetCore\Building.Web\Building.DataLayer\obj\Release\net5.0\Building.DataLayer.genruntimeconfig.cache

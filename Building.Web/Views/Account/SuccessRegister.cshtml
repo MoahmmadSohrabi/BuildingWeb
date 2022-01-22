@@ -1,0 +1,17 @@
+﻿@model Building.DataLayer.Entities.User.User
+@{
+    ViewData["Title"] = "پایان ثبت نام";
+}
+<br /><br /><br /><br />
+<nav aria-label="breadcrumb">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">مجتمع مسکونی</a></li>
+        <li class="breadcrumb-item active" aria-current="page">پایان ثبت نام</li>
+    </ul>
+</nav>
+
+<div class="alert alert-success">
+    <h2>@Model.UserName عزیز!</h2>
+    <p>پیام حاوی لینک فعال سازی به ایمیل @Model.Email ارسال گردید</p>
+    <p>جهت ادامه ثبت نام وارد ایمیل خود شوید و روی لینک کلیک کنید</p>
+</div>

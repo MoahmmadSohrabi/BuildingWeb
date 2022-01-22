@@ -1,0 +1,91 @@
+﻿@model Building.Core.DTOs.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="/assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="/assets/css/styleFormLoginRegister.css">
+</head>
+<body>
+    <div class="main">
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="/assets/images/signin-image.jpg" alt="sing up image"></figure>
+                        <a href="/Register" class="signup-image-link">عضویت در سایت</a>
+                        <a href="/ForgotPassword" class="signup-image-link">فراموش کردن کلمه عبور</a>
+                    </div>
+                   
+                    <div class="signin-form">
+                        <h2 class="form-title">ورود</h2>
+                        <form asp-action="Login" method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input asp-for="Email" type="email" name="email" id="email" placeholder="ایمیل" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                                <input asp-for="Password" type="password" name="password" id="password" placeholder="کلمه عبور" />
+                            </div>
+                            <div class="form-group">
+                                <input asp-for="RememberMe" type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>به خاطر سپردن من</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="ورود" />
+                            </div>
+                            <div asp-validation-summary="All" class="text-danger">
+
+                            </div>
+                        </form>
+                        @if (ViewBag.IsSuccess != null)
+                        {
+                            <div class="alert alert-success">
+                                <p class="help-block">ورود با موفقیت انجام شد</p>
+                            </div>
+
+                            <script>
+                                // Your delay in milliseconds
+                                var delay = 3000;
+                                setTimeout(function () { window.location = "https://localhost:44330/UserPanel"; }, delay);
+                            </script>
+                        }
+                        @if (ViewBag.EditProfile == true)
+                        {
+                            <div class="alert alert-warning">
+                                بدلیل ویرایش اطلاعات و بارگزاری مجدد اطلاعات باید دوباره وارد سایت شوید
+                            </div>
+                        }
+                        <div class="social-login">
+                            <span class="social-label">ورود با</span>
+                            <ul class="socials">
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/jquery/jquery.js"></script>
+    @*<script src="~/assets//js/allsummery-js/jquery.unobtrusive-ajax.min.js"></script>
+        <script src="~/assets//js/allsummery-js//jquery.validate.js"></script>*@
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

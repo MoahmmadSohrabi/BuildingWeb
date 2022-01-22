@@ -1,0 +1,73 @@
+﻿@page
+@using Building.DataLayer.Entities.House
+@model Building.Web.Pages.Admin.Houses.CreateHouseModel
+@{
+    ViewData["Title"] = "افزودن خانه";
+    List<HouseRole> houseRoles = ViewData["Roles"] as List<HouseRole>;
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">افزودن خانه جدید</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<div class="row">
+    <form method="post" enctype="multipart/form-data">
+        <div class="col-md-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    اطلاعات خانه
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>طبقه</label>
+                        <input type="text" asp-for="CreateHouseViewModel.Floor" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>هزینه</label>
+                        <input type="text" asp-for="CreateHouseViewModel.Cost" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>امکانات</label>
+                        <input type="text" asp-for="CreateHouseViewModel.Facility" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>انتخاب نقش خانه</label>
+                        @foreach (var item in houseRoles)
+                        {
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="SelectedRoles" value="@item.HouseRoleId">@item.HouseRoleTitle
+                                </label>
+                            </div>
+                        }
+
+                    </div>
+                    <input type="submit" value="ذخیره اطلاعات" class="btn btn-success" />
+                </div>
+                <!-- /.panel-body -->
+            </div>
+        </div>
+        <!--<div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    تصویر پروفایل
+                </div>-->
+                <!-- /.panel-heading -->
+                <!--<div class="panel-body">
+                    <img id="imgAvatar" class="thumbnail" src="~/UserAvatar/Defult.jpg" />
+                    <div class="form-group">
+                        <label>انتخاب تصویر</label>
+                        <input type="file" asp-for="CreateUserViewModel.UserAvatar">
+                    </div>
+                </div>-->
+                <!-- /.panel-body -->
+            <!--</div>
+
+        </div>-->
+
+    </form>
+</div>
